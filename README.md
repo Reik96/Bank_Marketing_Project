@@ -66,7 +66,7 @@ I am aware of the fact that there are many projects out there, who already dealt
 
 ## Hyperparametertuning
 
-
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/AUC_optimized.png)
 ## Further Steps
 
 
