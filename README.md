@@ -56,29 +56,61 @@ I am aware of the fact that there are many projects out there, who already dealt
 21 - y - has the client subscribed a term deposit? (binary: 'yes','no')  
 
 ## Exploratory Data Analysis
-In the EDA I tried to get an overview of the data.   
+In the EDA I tried to get an overview of the data.  
 That includes the structure, missing values and the relationship between the variables.
+
+Here are some facts about the data:  
+* imbalanced data set (ca. 4000 data points labeled as "no" and only around 500 labeled as "yes")  
+* average age of clients is 41  
+* ca. 85 % of Clients who signed a term deposit were single or divorced
+* nearly no correlation between the variables  
+
 
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Correlation_Matrix.png)
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/PairPlot.png)
-## Model Comparison
+## Model Comparison:
 For this project, I assumed, that it is important for the marketing campaign to contact as many people as possible who are willing to sign the term deposit.   
 Regarding the confusion matrix, I wanted to reduce the false-negative rate. 
+
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/confusion_matrix_raw.png)(1)
+
 
 In other words: I identified the model with the highest proportion of correctly identified actual posivites.  
 
 
-So I compared the different models on the recall score. To solve this
+So I compared the different models on the recall score.  
+
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/recall.PNG)  
+
+To have meaningful outcomes I used the SMOTE-technique to oversample the training data, because of the imbalanced data. Then I cross-validated the different methods and compared their recall score and fit time.  
+
+The best model based on recall was the **Logistic Regression**.
 
 
-![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/confusion_matrix_raw.png)(1)
  
-## Hyperparametertuning
+## Hyperparametertuning:
+
+For the hyperparametertuning I used GridSearchCV to improve the recall score.   
+
+My model was able to predict 39/52 Clients who were labeled as yes (75 % recall).  
+This is an improvement of 48 % compared to the untuned model.
 
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/AUC_optimized.png)
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Confusion_Matrix_optimized.png)  
-Regarding the confusion matrix, this would lead to a decreased false-negate rate and an increased false-positive rate.  
-## Further Steps
+
+The tradeoff by improving the recall is the reduced precision. Which leads to the fact, that more Clients who are labeled "yes" are actually "no".  
+
+
+## Further Steps:  
+
+Now my model can predict around 75 % of Clients who are willing to sign the term deposit, which is not bad.  
+To improve the model more data of clients with the label "yes" is necessary.
+
+Furthermore, I have to admit that there are certainly still many things that I could have examined and included. Nevertheless, I am satisfied with my first machine learning project and would be happy to receive feedback, criticism and further suggestions.
+
+
+
+
 
 
 
