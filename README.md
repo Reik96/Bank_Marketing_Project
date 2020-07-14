@@ -58,7 +58,7 @@ I am aware of the fact that there are many projects out there, who already dealt
 ## Exploratory Data Analysis
 
 
-
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Correlation_Matrix.png)
 
 ## Model Comparison
 
