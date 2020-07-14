@@ -62,13 +62,22 @@ That includes the structure, missing values and the relationship between the var
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Correlation_Matrix.png)
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/PairPlot.png)
 ## Model Comparison
-To choose the right model it is important to know how you want to compare them. 
+For this project, I assumed, that it is important for the marketing campaign to contact as many people as possible who are willing to sign the term deposit.   
+Regarding the confusion matrix, I wanted to reduce the false-negative rate. 
+
+In other words: I identified the model with the highest proportion of correctly identified actual posivites.  
 
 
+So I compared the different models on the recall score. To solve this
+
+
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/confusion_matrix_raw.png)(1)
+ 
 ## Hyperparametertuning
 
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/AUC_optimized.png)
-![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Confusion_Matrix_optimized.png)
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Confusion_Matrix_optimized.png)  
+Regarding the confusion matrix, this would lead to a decreased false-negate rate and an increased false-positive rate.  
 ## Further Steps
 
 
@@ -92,3 +101,4 @@ To choose the right model it is important to know how you want to compare them.
 * https://www.kaggle.com/janiobachmann/bank-marketing-campaign-opening-a-term-deposit (inspiration on how to compare different models and plotting ROC)
 * https://kiwidamien.github.io/how-to-do-cross-validation-when-upsampling-data.html (explanation on how to use imbalearn.pipeline)
 * https://archive.ics.uci.edu/ml/datasets/Bank+Marketing (UCI Bank Marketing Data Set)
+* (1) https://towardsdatascience.com/demystifying-confusion-matrix-29f3037b0cfa (Image of the confusion matrix)
