@@ -56,12 +56,13 @@ I am aware of the fact that there are many projects out there, who already dealt
 21 - y - has the client subscribed a term deposit? (binary: 'yes','no')  
 
 ## Exploratory Data Analysis
-
+In the EDA I tried to get an overview of the data.   
+That includes the structure, missing values and the relationship between the variables.
 
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Correlation_Matrix.png)
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/PairPlot.png)
 ## Model Comparison
-
+To choose the right model it is important to know how you want to compare them. 
 
 
 ## Hyperparametertuning
