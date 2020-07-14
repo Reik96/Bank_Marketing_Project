@@ -69,6 +69,10 @@ Here are some facts about the data:
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Correlation_Matrix.png)
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/PairPlot.png)
 ## Model Comparison:
+
+First, I transformed the categorical variables via OneHotEncoder. I also split the data into train and tests sets with a test size of 10%(due to the fact of less data with "yes"-label).
+
+
 For this project, I assumed, that it is important for the marketing campaign to contact as many people as possible who are willing to sign the term deposit.   
 Regarding the confusion matrix, I wanted to reduce the false-negative rate. 
 
@@ -84,6 +88,8 @@ So I compared the different models on the recall score.
 
 To have meaningful outcomes I used the SMOTE-technique to oversample the training data, because of the imbalanced data. Then I cross-validated the different methods and compared their recall score and fit time.  
 
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/model_comparison.PNG)  
+
 The best model based on recall was the **Logistic Regression**.
 
 
@@ -91,8 +97,8 @@ The best model based on recall was the **Logistic Regression**.
 ## Hyperparametertuning:
 
 For the hyperparametertuning I used GridSearchCV to improve the recall score.   
-
-My model was able to predict 39/52 Clients who were labeled as yes (75 % recall).  
+Before hyperparametertuning the recall score was around 27 % for thes "yes"-labeld data.  
+After tuning my model, it was able to predict 39/52 Clients who were willing to sign the term deposit (75 % recall).  
 This is an improvement of 48 % compared to the untuned model.
 
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/AUC_optimized.png)
