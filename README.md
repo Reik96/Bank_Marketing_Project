@@ -59,7 +59,7 @@ I am aware of the fact that there are many projects out there, who already dealt
 
 
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Correlation_Matrix.png)
-
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/PairPlot.png)
 ## Model Comparison
 
 
