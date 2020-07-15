@@ -94,9 +94,9 @@ The best model based on recall was the **Logistic Regression**.
 
 
  
-## Hyperparametertuning:
+## Hyperparameter Tuning:
 
-For the hyperparametertuning I used GridSearchCV to improve the recall score.   
+For the hyperparameter tuning I used GridSearchCV to improve the recall score.   
 Before hyperparametertuning the recall score was around 27 % for thes "yes"-labeld data.  
 After tuning my model, it was able to predict 39/52 Clients who were willing to sign the term deposit (75 % recall).  
 This is an improvement of 48 % compared to the untuned model.
