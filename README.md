@@ -109,8 +109,9 @@ The tradeoff by improving the recall is the reduced precision. Which leads to th
 
 ## Further Steps:  
 
-Now my model can predict around 75 % of Clients who are willing to sign the term deposit, which is not bad.  
-To improve the model more data of clients with the label "yes" is necessary.
+Currently my model can predict around 75 % of Clients who are willing to sign the term deposit as such.  
+To improve the model more data of clients with the label "yes" is necessary.  
+The EDA revealed a lot of information about the clients. In addition to the machine learning model, the marketing department could adjust their campaigns with the current information (e.g. determine the target group).  
 
 Furthermore, I have to admit that there are certainly still many things that I could have examined and included. Nevertheless, I am satisfied with my first machine learning project and would be happy to receive feedback, criticism and further suggestions.
 
