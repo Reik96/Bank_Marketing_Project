@@ -88,7 +88,7 @@ So I compared the different models on the recall score.
 
 To have meaningful outcomes I used the SMOTE-technique to oversample the training data, because of the imbalanced data. Then I cross-validated the different methods and compared their recall score and fit time.  
 
-![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/model_comparison.PNG)  
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Models.PNG)  
 
 The best model based on recall was the **Logistic Regression**.
 
@@ -97,19 +97,19 @@ The best model based on recall was the **Logistic Regression**.
 ## Hyperparameter Tuning:
 
 For the hyperparameter tuning I used GridSearchCV to improve the recall score.   
-Before hyperparametertuning the recall score was around 27 % for thes "yes"-labeld data.  
-After tuning my model, it was able to predict 39/52 Clients who were willing to sign the term deposit (75 % recall).  
-This is an improvement of 48 % compared to the untuned model.
+Before hyperparametertuning the recall score was around 58 % for thes "yes"-labeld data.  
+After tuning my model, it was able to predict 48/52 Clients who were willing to sign the term deposit (92 % recall).  
+This is an improvement of 34 % compared to the untuned model.
 
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/AUC_optimized.png)
-![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Confusion_Matrix_optimized.png)   
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Confusion_Matrix_optimized_.PNG)   
 
 The tradeoff by improving the recall is the reduced precision. Which leads to the fact, that more Clients who are labeled "yes" are actually "no".  
 
 
 ## Further Steps:  
 
-Currently my model can predict around 75 % of Clients who are willing to sign the term deposit as such.  
+Currently my model can predict around 92 % of Clients who are willing to sign the term deposit as such.  
 To improve the model more data of clients with the label "yes" is necessary.  
 The EDA revealed a lot of information about the clients. In addition to the machine learning model, the marketing department could adjust their campaigns with the current information (e.g. determine the target group).  
 
