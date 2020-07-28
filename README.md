@@ -102,7 +102,7 @@ After tuning my model, it was able to predict 39/52 Clients who were willing to 
 This is an improvement of 48 % compared to the untuned model.
 
 ![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/AUC_optimized.png)
-![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Confusion_Matrix_optimized.png)  
+![](https://github.com/Reik96/Bank_Marketing_Project/blob/master/images/Confusion_Matrix_optimized.png)   
 
 The tradeoff by improving the recall is the reduced precision. Which leads to the fact, that more Clients who are labeled "yes" are actually "no".  
 
